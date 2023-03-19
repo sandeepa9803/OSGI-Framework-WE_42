@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: StudentSubscriber
+Bundle-SymbolicName: StudentSubscriber
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: studentsubscriber.ServiceActivator
+Bundle-RequiredExecutionEnvironment: JavaSE-16
+Automatic-Module-Name: StudentSubscriber
+Import-Package: org.osgi.framework;version="1.3.0",
+ studentpublisher
+Bundle-ActivationPolicy: lazy
