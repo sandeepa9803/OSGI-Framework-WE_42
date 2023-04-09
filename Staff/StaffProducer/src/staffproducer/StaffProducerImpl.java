@@ -22,7 +22,7 @@ public class StaffProducerImpl implements StaffProducer{
 		System.out.println();
 		
 		
-		System.out.print("Are You A New Staff Member (y|Y or n|N)?: ");
+		System.out.print("Do You want to add a New Staff Member (y|Y or n|N)?: ");
 		String input = sc.next();
 		System.out.println();
 
@@ -32,22 +32,22 @@ public class StaffProducerImpl implements StaffProducer{
 			System.out.println("--------------------------------------------------------------------------");
 			System.out.println();
 			
-			System.out.print("Enter Your Name             :");
+			System.out.print("Enter Staff Name             :");
 			sstaffName = sc.next();
 			
-			System.out.print("Enter Your NIC              :");
+			System.out.print("Enter Staff NIC              :");
 			sNic = sc.next();
 			
-			System.out.print("Enter Your Qualification :");
+			System.out.print("Enter Staff Qualification :");
 			sQualification = sc.next();
 			
-			System.out.print("Enter Your Mobile Number:");
+			System.out.print("Enter Staff Mobile Number:");
 			sMobileNo = sc.next()
 					;
-			System.out.print("Enter Your Module       :");
+			System.out.print("Enter Staff Module       :");
 			sModule = sc.next();
 			
-			System.out.print("Enter Your Grade         :");
+			System.out.print("Enter Staff Grade         :");
 			sGrade = sc.next();
 			
 			sstaff.add(new Staff(sstaffName, sNic, sQualification, sMobileNo, sModule, sGrade));
@@ -55,7 +55,7 @@ public class StaffProducerImpl implements StaffProducer{
 			System.out.println();
 			System.out.println("--------------------------------------------------------------------------");
 			System.out.println();
-			System.out.print("Do You Want To Add Another Staff Member (y|Y or n|N)?: ");
+			System.out.print("Enter the NIC to find Details?: ");
 			input = sc.next();
 			System.out.println();
 		}
