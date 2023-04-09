@@ -101,7 +101,7 @@ public class ModuleProducerImpl implements ModuleProducer {
 					if(mod.get(y).getModuleId() == mmoduleId) { 
 					String deleteID = mod.get(y).getModuleId();
 					mod.remove(y);
-					System.out.println("Subject :" + deleteID + "is module deleted successfully");
+					System.out.println("Subject :" + deleteID + " is module deleted successfully");
 					break;
 					}	
 					x++;
@@ -117,6 +117,7 @@ public class ModuleProducerImpl implements ModuleProducer {
 
 	@Override
 	public void displayModuleList() {
+		System.out.println("-----------------------------------Module Deails-----------------------------------");
 		for (Module mod : mod) {
 			System.out.println("Module ID: " + mod.getModuleId());
 			System.out.println("Module Name: " + mod.getModuleFee());
@@ -132,6 +133,7 @@ public class ModuleProducerImpl implements ModuleProducer {
 
 	@Override
 	public Module getModuleById(String moduleid) {
+		System.out.println("-----------------------------------Module Deails-----------------------------------");
 		for (Module module : mod) {
 			if (module.getModuleId() == mmoduleId) {
 				return module;
